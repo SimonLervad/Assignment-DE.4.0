@@ -1,15 +1,47 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
 	<title>Assignment DE.4.0</title>
-	<script type="text/javascript">
-		let placesToVisit = ['New york', 'Chicago', 'Miami', 'Washington DC', 'Houston']
-		for(let i = 0; i < placesToVisit.length; i++){
-   			document.write(placesToVisit[i] + '<br>');
-		}
-	</script>
 </head>
 <body>
+<script>
+	// første opgave opret array
+	let placesToVisit = ["New York","Miami","Houston","Chicago","Washington DC"];
 
+	// tredje opgave - loop through array
+	for (i = 0; i < placesToVisit.length; i++) {
+		document.write('<p>' + 'Byer du burde besøge ' + placesToVisit[i] + '</p>');
+	}
+
+	document.write('<br>')
+
+	// fjerde opgave, tilføj by
+	placesToVisit.push('Dallas');
+	document.write('<p>' + 'By du skal besøge ' + placesToVisit[i] + '</p>');
+
+	document.write('<br>')
+
+	// femte opgave fem - skriv en function med placesToVisit
+	function outputArray(placesToVisit) {
+		for (i = 0; i < placesToVisit.length; i++) {
+		document.write('<p>' + 'Byer du skal besøge i USA ' + placesToVisit[i] + '</p>');
+	}
+	}
+	// opgave seks og syv udskriv function i HTML
+	outputArray(placesToVisit);
+	document.write('<br>');
+
+	// opgave 8
+	placesToVisit.splice(0, 2);
+	outputArray(placesToVisit);
+
+	document.write('<br>')
+	
+	//opgave 10 sort
+	placesToVisit.sort();
+	outputArray(placesToVisit);
+
+</script>
 </body>
 </html>
